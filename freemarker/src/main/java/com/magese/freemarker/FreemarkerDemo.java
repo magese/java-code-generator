@@ -11,7 +11,6 @@ import lombok.extern.slf4j.Slf4j;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStreamWriter;
-import java.math.BigDecimal;
 
 /**
  * Freemarker
@@ -33,8 +32,7 @@ public class FreemarkerDemo {
                 .fields(ListUtil.of(
                         FieldPair.of(Integer.class, "id"),
                         FieldPair.of(String.class, "username"),
-                        FieldPair.of(String.class, "password"),
-                        FieldPair.of(BigDecimal.class, "balance")
+                        FieldPair.of(String.class, "password")
                 ))
                 .build();
 
